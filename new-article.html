@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>最美应用-首页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="favicon.ico" type="image/-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	.button-archive,
+	.button-publish,
+	.button-upload-icon{
+		background-color: #B8B8B8;
+		border: 0;
+		width: 80px;
+		text-align: center;
+		padding:8px 0;
+		color: #fff;
+		font-size: 14px;
+		cursor: pointer;
+		float: left;
+		margin-right: 20px;
+	}
+	.button-publish{
+		background-color: #ffad01;
+		margin-right: 0;
+	}
+	.upload-icon{
+		display: block;
+		background-color: #e7e7e7;
+		width: 60px;
+		height: 60px;
+		border-radius: 8px;
+		border: none;
+		text-align: center;
+		line-height: 60px;
+		cursor: pointer;
+		float: left;
+	}
+	.button-upload-icon{
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	#new-article-title{
+		width: 600px;
+		margin-top: 20px;
+	}
+	.plate-list-item{
+		display: block;
+		background-color: white;
+		float: left;
+		padding:10px 50px;
+		margin-right: 5px;
+		border-bottom:1px solid white;
+	}
+	.deactive-plate-list-item{
+		border-bottom-color: #F6F6F4;
+	}
+	.iphone-app,
+	.android-app{
+		display: none;
+	}
+
+</style>
+</head>
+
+
+
+<body>
+	
+<header id="site-header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/titlebar_logo.png" alt="">
+			</a>
+			<a class="site-address">ZuimeiA.com</a>
+			<nav>
+				<ul id="nav">
+					<li><a href="index.html" class="nav-item">iPhone</a></li>
+					<li><a href="android.html" class="nav-item">Android</a></li>
+				</ul>
+			</nav>
+
+			<div class="account">
+				<a href="#" class="account-manage">
+					<img src="img/titlebar_personal_normal.png" alt="">
+				</a>
+					<div class="manage-list">
+						<span class="triangle-up"></span>
+						<ul>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布文章</a></li>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
+							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
+							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
+							<li><a href="" id="logout" class="manage-list-item">退出登录</a></li>
+						</ul>
+					</div>
+			</div>
+			<form action="" class="search">
+				<input type="search" value="搜索最美应用" class="default-search">
+				<a class="search-icon"></a>
+			</form>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="left-side">
+			<div class="content-card">
+				<div>
+					<h4 class="pull-left">撰写新文章</h4>
+					<div class="pull-right">	
+						<button class="button-archive">存草稿</button>
+						<button class="button-publish">发布</button>
+					</div>
+				</div>
+				<hr>	
+				<fieldset>
+				<form action="index.html">
+					<div>
+						<label><h5>选择发布平台</h5></label>
+						<div class="plate-checkbox-list">
+							<input type="checkbox" name="plate" value="iPhone" id="iphone-checkbox"><span class="checkbox">iPhone</span>
+							<input type="checkbox" name="plate" value="Android" id="android-checkbox"><span class="checkbox">Android</span>
+						</div>
+					</div>
+			</div>
+				<ul class="plate-list">
+					<li><a href="#" class="plate-list-item" id="iphone-nav">iPhone</a></li>
+					<li><a href="#" class="plate-list-item" id="android-nav">Android</a></li>
+				</ul>
+			<div class="clear content-card iphone-app">
+					<div>
+						<label><a class="upload-icon">icon</a></label>
+						<button class="button-upload-icon">上传图标</button>
+					</div>
+
+					<div>
+						<input type="text" id="new-article-title" value="文章标题">
+					</div>
+
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6">摘要，120字以内</textarea>
+					</div>
+
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6">其他内容（选填）</textarea>
+					</div>
+
+					<div>
+						<label><h5>撰写文章内容</h5></label>
+					</div>
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6"></textarea>
+					</div>
+			</div>
+			
+			<div class="clear content-card android-app">
+					<div>
+						<label><a class="upload-icon">icon</a></label>
+						<button class="button-upload-icon">上传图标</button>
+					</div>
+
+					<div>
+						<input type="text" id="new-article-title" value="文章标题">
+					</div>
+
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6">摘要，120字以内</textarea>
+					</div>
+
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6">其他内容（选填）</textarea>
+					</div>
+
+					<div>
+						<label><h5>撰写文章内容</h5></label>
+					</div>
+					<div>
+						<textarea name="comment" id="" cols="80" rows="6"></textarea>
+					</div>
+
+				
+			</div>
+
+			</div>
+			<div class="right-side">
+				
+				<div class="side-card">
+					<h4>下载地址</h4>
+					<img src="" alt="">
+					<button class="button-upload-icon">上传二维码</button>
+					<input type="text" value="应用下载地址">
+				</div>
+
+				<div class="side-card">
+					<h4>下载地址</h4>
+					<input type="text"><button class="button-upload-icon">添加</button>
+				</div>
+
+
+
+				</form>
+			</fieldset>
+		</div>
+	</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$('document').ready(function(){
+			var editarea=$('.edit-area');
+			$('.manage-user-list-wrapper li').mouseover(function(){
+				$(this).find(editarea).show();
+			}).mouseout(function(){
+				$('.edit-area').hide();
+			})
+
+			// account list 
+			$('.account-manage').click(function(){
+				$('.manage-list').toggle();
+			})
+			var iphonenav=$('#iphone-nav');
+			var androidnav=$('#android-nav');
+			var iphoneapp=$('.iphone-app');
+			var androidapp=$('.android-app');
+			// write article area
+			$('#iphone-checkbox').on('click',function(){
+					iphonenav.toggle();
+					iphoneapp.toggle();
+			}) 
+			$('#android-checkbox').on('click',function(){
+					androidnav.toggle();
+					androidapp.toggle();
+			})
+			$('#android-nav').click(function(){
+
+			})
+			
+		})
+			</script>
+
+
+</body>
+
+</html>

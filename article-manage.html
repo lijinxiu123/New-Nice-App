@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>最美应用-首页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="favicon.ico" type="image/-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<style>
+	.search-user{
+		border: 1px solid #efefef;
+		background: #fff;
+		height: 10px;
+		width: 120px;
+	}
+
+
+	.manage-user-list-header{
+		display: block;
+		box-sizing: border-box;
+		height: 52px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 30px;
+		position: relative;
+	}
+	.manage-user-list-wrapper>li:nth-child(odd){
+		background-color: #fafafa;
+	}
+	.manage-user-list-wrapper>li:first-child{
+		background-color: #fff4de;
+		border-top: 1px solid #f8e8c6;
+		height: 40px;
+	}
+	.manage-user-list-wrapper>li:last-child{
+		border-bottom: 1px solid #FFF3DA;
+	}
+	.manage-user-list-header li{
+		float: left;
+		box-sizing:border-box;
+		display: block;
+	}
+	.header-article-title{
+		width: 540px;
+	}
+	.header-username{
+		width: 80px;
+	}
+	.header-plate{
+		width: 200px;
+	}
+	.header-date{
+		width: 75px;
+	}
+	
+		h3{
+		font-size: 12px;	
+	}
+	h3.dark{
+		color: #474747;
+	}
+	h3.sub{
+		font-size: 12px;
+		color: #AAA;
+		padding-top: 5px;
+	}
+	.edit-area{
+		display: none;
+	}
+	.edit,
+	.delete,
+	.separator{
+		font-size: 12px;
+	}
+	.edit{
+		color: #62a9c7;
+	}
+	.delete{
+		color: #ea7764;
+	}
+	.add-user{
+		background: url('img/manage_add_normal.png');
+		background-position: 0 3px;
+		background-repeat: no-repeat;
+		padding-left: 20px;
+	}
+	.add-user:hover{
+		color: #000;
+
+	}
+	.list-search{
+		position: relative;
+	}
+
+</style>
+</head>
+<body>
+	<header id="site-header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/titlebar_logo.png" alt="">
+			</a>
+			<a class="site-address">ZuimeiA.com</a>
+			<nav>
+				<ul id="nav">
+					<li><a href="index.html" class="nav-item">iPhone</a></li>
+					<li><a href="android.html" class="nav-item">Android</a></li>
+				</ul>
+			</nav>
+
+			<div class="account">
+				<a href="#" class="account-manage">
+					<img src="img/titlebar_personal_normal.png" alt="">
+				</a>
+					<div class="manage-list">
+						<span class="triangle-up"></span>
+						<ul>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布文章</a></li>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
+							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
+							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
+							<li><a href="" id="logout" class="manage-list-item">退出登录</a></li>
+						</ul>
+					</div>
+			</div>
+			<form action="" class="search">
+				<input type="search" value="搜索最美应用" class="default-search">
+				<a class="search-icon"></a>
+			</form>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="content-card">
+			<div>	
+				<h4 class="pull-left">文章管理</h4>
+				<a href="" class="pull-right add-user"><h4>发表新文章</h4></a>
+			</div>
+			<hr>	
+
+		<fieldset>
+			<form action="">
+				<select class="pull-left">
+				  <option value="all">全部文章(<span id="all">118</span>)</option>
+				  <option value="editor">已发布(<span id="published">100</span>)</option>
+				  <option value="user">草稿(<span id="archive">18</span>)</option>
+				</select>
+				<select class="pull-left left1">
+				  <option value="all">全部平台(<span id="all-plate">118</span>)</option>
+				  <option value="editor">iPhone(<span id="iPhone">72</span>)</option>
+				  <option value="user">Android(<span id="Android">46</span>)</option>
+				</select>
+				<div class="list-search">
+				<input type="search" class="pull-right search-user" class="list-search" value="搜索文章">
+				<a class="small-search-icon"></a>
+				</div>
+			</form>		
+		</fieldset>
+			
+		<ul class="manage-user-list-wrapper">
+			<li>
+				<ul class="manage-user-list-header">
+					<li class="header-article-title"><h3 class="dark">标题</h3></li>
+					<li class="header-username"><h3 class="dark">作者</h3></li>
+					<li class="header-plate"><h3 class="dark">平台</h3></li>
+					<li class="header-date"><h3 class="dark">状态/日期</h3></li>
+				</ul>
+			</li>
+
+			<li>
+				
+				<ul class="manage-user-list-header">
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
+						<div class="edit-area">
+							<a href="#" class="edit">修改</a>
+							<a href="#" class="separator">|</a>
+							<a href="#" class="delete">删除</a>
+						</div>
+					</li>
+
+					<li class="header-username"><h3 class="dark">姜奎</h3>
+					</li>
+					<li class="header-plate"><h3 class="dark">iPhone、Android、Windows</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="manage-user-list-header">
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
+						<div class="edit-area">
+							<a href="#" class="edit">修改</a>
+							<a href="#" class="separator">|</a>
+							<a href="#" class="delete">删除</a>
+						</div>
+					</li>
+					<li class="header-username"><h3 class="dark">姜奎</h3>
+					</li>
+					<li class="header-plate"><h3 class="dark">iPhone</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="manage-user-list-header">
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
+						<div class="edit-area">
+							<a href="#" class="edit">修改</a>
+							<a href="#" class="separator">|</a>
+							<a href="#" class="delete">删除</a>
+						</div>
+					</li>
+					<li class="header-username"><h3 class="dark">姜奎</h3>
+					</li>
+					<li class="header-plate"><h3 class="dark">iPhone</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
+					
+				</ul>
+			</li>
+			
+			
+			
+		</ul>
+
+
+
+
+		</div>
+
+	</div>
+	<div class="narrow-container">
+			<footer>
+				<div class="side-card">
+					<a href="#" class="pre-page">上一页</a>
+					<ul>
+						<li><a href="" class="page active-page">1</a></li>
+						<li><a href="" class="page">2</a></li>
+						<li><a href="" class="page">3</a></li>
+						<li><a href="" class="page">4</a></li>
+						<li><a href="" class="page">5</a></li>
+						<li><a href="" class="page">6</a></li>
+						<li><a href="" class="page">7</a></li>
+						<li><a href="" class="page">8</a></li>
+					</ul>
+					<a href="#" class="next-page">下一页	</a>
+				</div>
+				<a class="back-to-top" href="#top">
+					
+				</a>
+			</footer>
+	</div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$('document').ready(function(){
+			var editarea=$('.edit-area');
+			$('.manage-user-list-wrapper li').mouseover(function(){
+				$(this).find(editarea).show();
+			}).mouseout(function(){
+				$('.edit-area').hide();
+			})
+
+			// account list 
+			$('.account-manage').click(function(){
+				$('.manage-list').toggle();
+			})
+
+		})
+
+	</script>
+
+</body>
+
+</html>

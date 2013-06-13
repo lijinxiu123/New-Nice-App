@@ -1,0 +1,162 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+code,
+em,
+img,
+q,
+small,
+strong,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+table,
+tbody,
+tr,
+th,
+td,
+input {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+h1,
+strong
+{
+  color: #000;
+}
+div{
+  overflow: hidden;
+}
+span{
+  color: #585858;
+  font-size: 14px;
+}
+input{
+    border: 1px solid #DADADA;
+    font-size: 14px;
+    color: #868686;
+    padding:8px 10px ;
+    margin-bottom: 10px;
+}
+textarea {
+    margin-bottom: 10px;
+    border: 1px solid #DADADA;
+    color: #868686;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus,
+input[type="search"]:focus,
+input[type="search"]:active{
+
+    border: 1px solid #bebebe;
+      box-shadow: 0；
+      -webkit-box-shadow: 0;
+       -moz-box-shadow: 0;
+            box-shadow: 0;
+      outline: 0 none;
+  }
+a{
+  text-decoration: none;
+  color: #585858;
+  font-size: 14px;
+}
+hr{
+  margin: 10px 0;
+  border: 0;
+  height: 1px;
+  background: #efefef;
+}
+a img,
+:link img,
+:visited img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+ul {
+  list-style: none;
+}
+h1{
+  font-size: 24px;
+  margin: 5px 0 2px;
+}
+
+/*右侧推荐标题*/
+h2{
+  font-size: 16px;
+  color: #606060;
+  margin:0 0 10px;
+}
+
+/*右侧推荐标题描述*/
+h3{
+  font-size: 14px;
+  color: #AAAAAA;
+  margin: 0;
+}
+/*文章详情页面的“更多高清截图”*/
+h4{
+  font-size: 16px;
+  margin:0 0 20px 0;
+}
+
+/*热门、分享标签*/
+h5{
+  font-size: 14px;
+  color: #333333;
+  margin:0;
+}
+
+/*推荐更美的应用*/
+h6{
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000;
+}
+
+
+p{
+  color: #585858;
+  margin:0 0 25px 0;
+  font-size: 14px;
+  clear: both;
+}
+
+section{
+  position: relative;
+}
